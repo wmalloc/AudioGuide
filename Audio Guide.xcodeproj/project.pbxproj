@@ -24,6 +24,7 @@
 		84F0A659183B066800EF2CF9 /* CLAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0A658183B066800EF2CF9 /* CLAMapViewController.m */; };
 		84F0A65E183B1B8B00EF2CF9 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F0A65C183B1B8B00EF2CF9 /* menu.png */; };
 		84F0A65F183B1B8B00EF2CF9 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F0A65D183B1B8B00EF2CF9 /* menu@2x.png */; };
+		84F319B3183C3DB10047567D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F319B2183C3DB10047567D /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		84F0A658183B066800EF2CF9 /* CLAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAMapViewController.m; sourceTree = "<group>"; };
 		84F0A65C183B1B8B00EF2CF9 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		84F0A65D183B1B8B00EF2CF9 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		84F319B2183C3DB10047567D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				8427CABB183ACC4600FCA047 /* UIKit.framework in Frameworks */,
 				84F0A653183B052C00EF2CF9 /* MapKit.framework in Frameworks */,
 				8427CAB7183ACC4600FCA047 /* Foundation.framework in Frameworks */,
+				84F319B3183C3DB10047567D /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +111,7 @@
 		8427CAB5183ACC4600FCA047 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84F319B2183C3DB10047567D /* Parse.framework */,
 				84F0A652183B052C00EF2CF9 /* MapKit.framework */,
 				8427CAB6183ACC4600FCA047 /* Foundation.framework */,
 				8427CAB8183ACC4600FCA047 /* CoreGraphics.framework */,
@@ -417,6 +421,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/malik/Projects/AudioGuide,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Audio Guide/Audio Guide-Prefix.pch";
 				INFOPLIST_FILE = "Audio Guide/Audio Guide-Info.plist";
@@ -431,6 +439,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/malik/Projects/AudioGuide,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Audio Guide/Audio Guide-Prefix.pch";
 				INFOPLIST_FILE = "Audio Guide/Audio Guide-Info.plist";
