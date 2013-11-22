@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CLALeftMenuViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *userImageView;
+@property (weak, nonatomic) IBOutlet UIView *separatorView;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 
 @end

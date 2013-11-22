@@ -7,7 +7,6 @@
 //
 
 #import "CLALeftMenuViewController.h"
-#import "CLACommon.h"
 
 @interface CLALeftMenuViewController ()
 
