@@ -8,6 +8,7 @@
 
 @import MapKit;
 
+#import "CLACommon.h"
 #import "CLAMapViewController.h"
 
 @interface CLAMapViewController ()
@@ -49,6 +50,12 @@
 }
 */
 
-- (IBAction)updateMapView:(id)sender {
+- (IBAction)updateMapView:(id)sender
+{
+}
+
+- (IBAction)showLeftMenu:(id)sender
+{
+    [self.revealController showViewController:self.revealController.leftViewController];
 }
 @end

@@ -7,12 +7,29 @@
 //
 
 #import "CLAAppDelegate.h"
+#import "CLACommon.h"
+#import "CLALeftMenuViewController.h"
+#import "CLAMapViewController.h"
+
+@interface CLAAppDelegate () <PKRevealing>
+@property (strong, nonatomic) PKRevealController *revealController;
+@property (strong, nonatomic) UINavigationController *rootViewController;
+@end
 
 @implementation CLAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    CLALeftMenuViewController *left = [[CLALeftMenuViewController alloc] initWithNibName:@"CLALeftMenuView" bundle:[NSBundle mainBundle]];
+    UIStoryboard *mapStoryBoard = [UIStoryboard storyboardWithName:@"CLAMapView" bundle:[NSBundle mainBundle]];
+    self.rootViewController = [mapStoryBoard instantiateInitialViewController];
+    self.revealController = [PKRevealController revealControllerWithFrontViewController:self.rootViewController leftViewController:left];
+    self.revealController.delegate = self;
+    self.window.rootViewController = self.revealController;
+
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

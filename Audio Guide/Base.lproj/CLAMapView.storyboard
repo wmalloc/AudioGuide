@@ -53,7 +53,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Audio Guide" id="JAy-r7-yqG">
-                        <barButtonItem key="leftBarButtonItem" image="menu.png" style="plain" id="bA8-v9-Su0"/>
+                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="bA8-v9-Su0">
+                            <connections>
+                                <action selector="showLeftMenu:" destination="IOc-st-35n" id="eZJ-0u-JZ8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="arrowButton" destination="Mqe-jr-cZI" id="Eff-HI-XG2"/>

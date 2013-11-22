@@ -11,4 +11,5 @@
 @interface CLAMapViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *arrowButton;
 - (IBAction)updateMapView:(id)sender;
+- (IBAction)showLeftMenu:(id)sender;
 @end
