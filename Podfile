@@ -6,3 +6,6 @@ pod 'AlertViews+Blocks', :git => 'https://github.com/wmalloc/AlertViews-Blocks.g
 pod 'AFNetworking', :git => 'https://github.com/AFNetworking/AFNetworking.git'
 pod "Facebook-iOS-SDK", "~> 3.10"
 pod "PKRevealController", "~> 2.0.6"
+pod "FXKeychain", "~> 1.4"
+pod "SOCKit", "~> 1.0"
+

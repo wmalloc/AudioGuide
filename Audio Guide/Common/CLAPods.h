@@ -11,3 +11,5 @@
 #import <AlertViews+Blocks/AlertViews+Blocks.h>
 #import <FacebookSDK/FacebookSDK.h>
 #import <PKRevealController/PKRevealController.h>
+#import <FXKeychain/FXKeychain.h>
+#import <SOCKit/SOCKit.h>
