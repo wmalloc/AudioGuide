@@ -19,6 +19,7 @@
 		8427CAD8183ACC4600FCA047 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8427CABA183ACC4600FCA047 /* UIKit.framework */; };
 		8427CAE0183ACC4600FCA047 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8427CADE183ACC4600FCA047 /* InfoPlist.strings */; };
 		8427CAE2183ACC4600FCA047 /* Audio_GuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427CAE1183ACC4600FCA047 /* Audio_GuideTests.m */; };
+		84A6BFFC183EF832007B11B7 /* CLAApplicationKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6BFFB183EF832007B11B7 /* CLAApplicationKeys.m */; };
 		84F0A653183B052C00EF2CF9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F0A652183B052C00EF2CF9 /* MapKit.framework */; };
 		84F0A656183B05CE00EF2CF9 /* CLAMapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F0A654183B05CE00EF2CF9 /* CLAMapView.storyboard */; };
 		84F0A659183B066800EF2CF9 /* CLAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0A658183B066800EF2CF9 /* CLAMapViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84252798183E77B7003422F0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		84252799183E77BF003422F0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		8427CAB3183ACC4600FCA047 /* Audio Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8427CAB6183ACC4600FCA047 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8427CAB8183ACC4600FCA047 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,6 +57,12 @@
 		8427CADD183ACC4600FCA047 /* Audio GuideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Audio GuideTests-Info.plist"; sourceTree = "<group>"; };
 		8427CADF183ACC4600FCA047 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8427CAE1183ACC4600FCA047 /* Audio_GuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio_GuideTests.m; sourceTree = "<group>"; };
+		84A6BFFA183EF832007B11B7 /* CLAApplicationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAApplicationKeys.h; sourceTree = "<group>"; };
+		84A6BFFB183EF832007B11B7 /* CLAApplicationKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAApplicationKeys.m; sourceTree = "<group>"; };
+		84A6BFFD183EFA86007B11B7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		84A6BFFF183EFAB8007B11B7 /* CLAPods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAPods.h; sourceTree = "<group>"; };
+		84A6C002183EFAE8007B11B7 /* CLACommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLACommon.h; sourceTree = "<group>"; };
+		84CB4ABB183C598800C6DEA4 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 		84F0A652183B052C00EF2CF9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84F0A655183B05CE00EF2CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CLAMapView.storyboard; sourceTree = "<group>"; };
 		84F0A657183B066800EF2CF9 /* CLAMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAMapViewController.h; sourceTree = "<group>"; };
@@ -92,6 +101,7 @@
 		8427CAAA183ACC4600FCA047 = {
 			isa = PBXGroup;
 			children = (
+				84A6BFFE183EFAA9007B11B7 /* Common */,
 				8427CABC183ACC4600FCA047 /* Audio Guide */,
 				8427CADB183ACC4600FCA047 /* Audio GuideTests */,
 				8427CAB5183ACC4600FCA047 /* Frameworks */,
@@ -124,6 +134,8 @@
 		8427CABC183ACC4600FCA047 /* Audio Guide */ = {
 			isa = PBXGroup;
 			children = (
+				84A6BFFA183EF832007B11B7 /* CLAApplicationKeys.h */,
+				84A6BFFB183EF832007B11B7 /* CLAApplicationKeys.m */,
 				8427CAC5183ACC4600FCA047 /* CLAAppDelegate.h */,
 				8427CAC6183ACC4600FCA047 /* CLAAppDelegate.m */,
 				84F0A654183B05CE00EF2CF9 /* CLAMapView.storyboard */,
@@ -143,6 +155,7 @@
 				8427CABF183ACC4600FCA047 /* InfoPlist.strings */,
 				8427CAC2183ACC4600FCA047 /* main.m */,
 				8427CAC4183ACC4600FCA047 /* Audio Guide-Prefix.pch */,
+				84A6BFFD183EFA86007B11B7 /* Podfile */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,8 +174,21 @@
 			children = (
 				8427CADD183ACC4600FCA047 /* Audio GuideTests-Info.plist */,
 				8427CADE183ACC4600FCA047 /* InfoPlist.strings */,
+				84CB4ABB183C598800C6DEA4 /* Podfile */,
+				84252798183E77B7003422F0 /* README.md */,
+				84252799183E77BF003422F0 /* LICENSE */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A6BFFE183EFAA9007B11B7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84A6BFFF183EFAB8007B11B7 /* CLAPods.h */,
+				84A6C002183EFAE8007B11B7 /* CLACommon.h */,
+			);
+			name = Common;
+			path = "Audio Guide/Common";
 			sourceTree = "<group>";
 		};
 		84F0A65A183B1B8B00EF2CF9 /* Resources */ = {
@@ -294,6 +320,7 @@
 				8427CAC7183ACC4600FCA047 /* CLAAppDelegate.m in Sources */,
 				84F0A659183B066800EF2CF9 /* CLAMapViewController.m in Sources */,
 				8427CAC3183ACC4600FCA047 /* main.m in Sources */,
+				84A6BFFC183EF832007B11B7 /* CLAApplicationKeys.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
