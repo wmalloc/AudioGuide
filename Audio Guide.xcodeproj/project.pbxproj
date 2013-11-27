@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		774085DAC346487BA0EEBA5C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2F4A3C38524DA398A083F7 /* libPods.a */; };
+		84044091184445DD00392109 /* CLALeftMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84044090184445DD00392109 /* CLALeftMenu.plist */; };
+		84044094184448AD00392109 /* CLATracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84044093184448AD00392109 /* CLATracksViewController.m */; };
+		8404409718444DBB00392109 /* CLAServerAPISessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404409618444DBB00392109 /* CLAServerAPISessionManager.m */; };
+		84044099184450BA00392109 /* CLATrackListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84044098184450BA00392109 /* CLATrackListing.storyboard */; };
 		840885C4183F195D006626D1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840885BC183F195D006626D1 /* AudioToolbox.framework */; };
 		840885C5183F195D006626D1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840885BD183F195D006626D1 /* CFNetwork.framework */; };
 		840885C6183F195D006626D1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840885BE183F195D006626D1 /* CoreLocation.framework */; };
@@ -52,6 +56,12 @@
 
 /* Begin PBXFileReference section */
 		6C2F4A3C38524DA398A083F7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84044090184445DD00392109 /* CLALeftMenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CLALeftMenu.plist; sourceTree = "<group>"; };
+		84044092184448AD00392109 /* CLATracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLATracksViewController.h; sourceTree = "<group>"; };
+		84044093184448AD00392109 /* CLATracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLATracksViewController.m; sourceTree = "<group>"; };
+		8404409518444DBB00392109 /* CLAServerAPISessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAServerAPISessionManager.h; sourceTree = "<group>"; };
+		8404409618444DBB00392109 /* CLAServerAPISessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAServerAPISessionManager.m; sourceTree = "<group>"; };
+		84044098184450BA00392109 /* CLATrackListing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CLATrackListing.storyboard; sourceTree = "<group>"; };
 		840885BC183F195D006626D1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		840885BD183F195D006626D1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		840885BE183F195D006626D1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -189,7 +199,13 @@
 				84F0A658183B066800EF2CF9 /* CLAMapViewController.m */,
 				84F87CF2183F018000E4BA58 /* CLALeftMenuViewController.h */,
 				84F87CF3183F018000E4BA58 /* CLALeftMenuViewController.m */,
+				84044090184445DD00392109 /* CLALeftMenu.plist */,
 				84F87CF4183F018000E4BA58 /* CLALeftMenuView.xib */,
+				84044092184448AD00392109 /* CLATracksViewController.h */,
+				84044093184448AD00392109 /* CLATracksViewController.m */,
+				84044098184450BA00392109 /* CLATrackListing.storyboard */,
+				8404409518444DBB00392109 /* CLAServerAPISessionManager.h */,
+				8404409618444DBB00392109 /* CLAServerAPISessionManager.m */,
 				8427CACE183ACC4600FCA047 /* Images.xcassets */,
 				8427CABD183ACC4600FCA047 /* Supporting Files */,
 			);
@@ -305,7 +321,7 @@
 			attributes = {
 				CLASSPREFIX = CLA;
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Claert Labs, Inc.";
+				ORGANIZATIONNAME = "Claret Labs, Inc.";
 				TargetAttributes = {
 					8427CAB2183ACC4600FCA047 = {
 						DevelopmentTeam = LS8M3EJ3JN;
@@ -344,9 +360,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84044099184450BA00392109 /* CLATrackListing.storyboard in Resources */,
 				84F0A65E183B1B8B00EF2CF9 /* menu.png in Resources */,
 				84F87CF6183F018000E4BA58 /* CLALeftMenuView.xib in Resources */,
 				84F0A656183B05CE00EF2CF9 /* CLAMapView.storyboard in Resources */,
+				84044091184445DD00392109 /* CLALeftMenu.plist in Resources */,
 				84F0A65F183B1B8B00EF2CF9 /* menu@2x.png in Resources */,
 				8427CACF183ACC4600FCA047 /* Images.xcassets in Resources */,
 				8427CAC1183ACC4600FCA047 /* InfoPlist.strings in Resources */,
@@ -404,6 +422,8 @@
 				8427CAC7183ACC4600FCA047 /* CLAAppDelegate.m in Sources */,
 				84F0A659183B066800EF2CF9 /* CLAMapViewController.m in Sources */,
 				8427CAC3183ACC4600FCA047 /* main.m in Sources */,
+				84044094184448AD00392109 /* CLATracksViewController.m in Sources */,
+				8404409718444DBB00392109 /* CLAServerAPISessionManager.m in Sources */,
 				84A6BFFC183EF832007B11B7 /* CLAApplicationKeys.m in Sources */,
 				84F87CF5183F018000E4BA58 /* CLALeftMenuViewController.m in Sources */,
 			);

@@ -21,16 +21,22 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
+#ifdef DEBUG
+    [[AFNetworkActivityLogger sharedLogger] startLogging];
+    [[AFNetworkActivityLogger sharedLogger] setLevel:AFLoggerLevelError];
+#endif
     [Parse setApplicationId:[CLAApplicationKeys parseApplicationIdentifier] clientKey:[CLAApplicationKeys parseClientKey]];
     //[PFFacebookUtils initializeFacebook];
     //[PFTwitterUtils initializeWithConsumerKey:@"your_twitter_consumer_key" consumerSecret:@"your_twitter_consumer_secret"];
 
-//    PFACL *defaultACL = [PFACL ACL];
-//    [defaultACL setPublicReadAccess:YES];
-//    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
+    PFACL *defaultACL = [PFACL ACL];
+    [defaultACL setPublicReadAccess:YES];
+    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
 
     CLALeftMenuViewController *left = [[CLALeftMenuViewController alloc] initWithNibName:@"CLALeftMenuView" bundle:[NSBundle mainBundle]];
-    if (![PFUser currentUser]) // No user logged in
+    PFUser *currentUser = [PFUser currentUser];
+    
+    if(!currentUser) // No user logged in
     {
         self.revealController = [PKRevealController revealControllerWithFrontViewController:[self loginViewController] leftViewController:nil];
     } else {
@@ -124,6 +130,9 @@
 // Sent to the delegate when a PFUser is logged in.
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
 {
+    [logInController dismissViewControllerAnimated:YES completion:^{
+
+    }];
 }
 
 // Sent to the delegate when the log in attempt fails.
@@ -169,7 +178,7 @@
 // Sent to the delegate when a PFUser is signed up.
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user
 {
-    //[self dismissModalViewControllerAnimated:YES]; // Dismiss the PFSignUpViewController
+    [signUpController dismissViewControllerAnimated:YES completion:NULL]; // Dismiss the PFSignUpViewController
 }
 
 // Sent to the delegate when the sign up attempt fails.
