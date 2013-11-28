@@ -42,6 +42,8 @@
 		84F319B3183C3DB10047567D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F319B2183C3DB10047567D /* Parse.framework */; };
 		84F87CF5183F018000E4BA58 /* CLALeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F87CF3183F018000E4BA58 /* CLALeftMenuViewController.m */; };
 		84F87CF6183F018000E4BA58 /* CLALeftMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F87CF4183F018000E4BA58 /* CLALeftMenuView.xib */; };
+		84F9AC8818466C5400B77F6F /* CLATrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F9AC8718466C5400B77F6F /* CLATrack.m */; };
+		84F9AC8E18466EB300B77F6F /* CLATrack+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F9AC8D18466EB300B77F6F /* CLATrack+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,11 @@
 		84F87CF2183F018000E4BA58 /* CLALeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLALeftMenuViewController.h; sourceTree = "<group>"; };
 		84F87CF3183F018000E4BA58 /* CLALeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLALeftMenuViewController.m; sourceTree = "<group>"; };
 		84F87CF4183F018000E4BA58 /* CLALeftMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLALeftMenuView.xib; sourceTree = "<group>"; };
+		84F9AC8318466B3700B77F6F /* CLAServerAPIUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAServerAPIUrls.h; sourceTree = "<group>"; };
+		84F9AC8618466C5400B77F6F /* CLATrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLATrack.h; path = Model/CLATrack.h; sourceTree = "<group>"; };
+		84F9AC8718466C5400B77F6F /* CLATrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLATrack.m; path = Model/CLATrack.m; sourceTree = "<group>"; };
+		84F9AC8C18466EB300B77F6F /* CLATrack+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLATrack+Category.h"; path = "Model/CLATrack+Category.h"; sourceTree = "<group>"; };
+		84F9AC8D18466EB300B77F6F /* CLATrack+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLATrack+Category.m"; path = "Model/CLATrack+Category.m"; sourceTree = "<group>"; };
 		E1448E92610345A0BB072DF2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +199,7 @@
 			children = (
 				84A6BFFA183EF832007B11B7 /* CLAApplicationKeys.h */,
 				84A6BFFB183EF832007B11B7 /* CLAApplicationKeys.m */,
+				84F9AC8318466B3700B77F6F /* CLAServerAPIUrls.h */,
 				8427CAC5183ACC4600FCA047 /* CLAAppDelegate.h */,
 				8427CAC6183ACC4600FCA047 /* CLAAppDelegate.m */,
 				84F0A654183B05CE00EF2CF9 /* CLAMapView.storyboard */,
@@ -206,6 +214,10 @@
 				84044098184450BA00392109 /* CLATrackListing.storyboard */,
 				8404409518444DBB00392109 /* CLAServerAPISessionManager.h */,
 				8404409618444DBB00392109 /* CLAServerAPISessionManager.m */,
+				84F9AC8618466C5400B77F6F /* CLATrack.h */,
+				84F9AC8718466C5400B77F6F /* CLATrack.m */,
+				84F9AC8C18466EB300B77F6F /* CLATrack+Category.h */,
+				84F9AC8D18466EB300B77F6F /* CLATrack+Category.m */,
 				8427CACE183ACC4600FCA047 /* Images.xcassets */,
 				8427CABD183ACC4600FCA047 /* Supporting Files */,
 			);
@@ -421,6 +433,8 @@
 			files = (
 				8427CAC7183ACC4600FCA047 /* CLAAppDelegate.m in Sources */,
 				84F0A659183B066800EF2CF9 /* CLAMapViewController.m in Sources */,
+				84F9AC8E18466EB300B77F6F /* CLATrack+Category.m in Sources */,
+				84F9AC8818466C5400B77F6F /* CLATrack.m in Sources */,
 				8427CAC3183ACC4600FCA047 /* main.m in Sources */,
 				84044094184448AD00392109 /* CLATracksViewController.m in Sources */,
 				8404409718444DBB00392109 /* CLAServerAPISessionManager.m in Sources */,

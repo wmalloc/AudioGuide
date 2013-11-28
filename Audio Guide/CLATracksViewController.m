@@ -9,7 +9,7 @@
 #import "CLATracksViewController.h"
 
 @interface CLATracksViewController ()
-
+@property (nonatomic, strong) NSArray *tracks;
 @end
 
 @implementation CLATracksViewController
@@ -24,16 +24,10 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     CLAServerAPISessionManager *manager = [CLAServerAPISessionManager manager];
-//    [manager GET:@"https://api.parse.com/1/classes/Track" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        NSLog(@"%@", responseObject);
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        NSLog(@"error = %@", [error localizedDescription]);
-//    }];
-
-    [manager GET:@"/1/classes/Track" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"%@", responseObject);
+    [manager GET:CLAServerAPIUrlsTrack parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        CRFLogInfo(CRFLogLevelEvent, @"%@", responseObject);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"error = %@", [error localizedDescription]);
+        CRFLogError(CRFLogLevelEvent, @"%@", [error localizedDescription]);
     }];
 }
 
@@ -47,7 +41,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 0;
 }
