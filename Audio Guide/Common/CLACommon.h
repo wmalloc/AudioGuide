@@ -8,5 +8,5 @@
 
 #import "CLAPods.h"
 #import "CLAApplicationKeys.h"
-#import "CLAServerAPISessionManager.h"
-#import "CLAServerAPIUrls.h"
+#import "CLAParseAPISession.h"
+#import "CLASeverAPIURLs.h"

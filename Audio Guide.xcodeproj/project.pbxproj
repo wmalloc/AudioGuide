@@ -10,7 +10,7 @@
 		774085DAC346487BA0EEBA5C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2F4A3C38524DA398A083F7 /* libPods.a */; };
 		84044091184445DD00392109 /* CLALeftMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84044090184445DD00392109 /* CLALeftMenu.plist */; };
 		84044094184448AD00392109 /* CLATracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84044093184448AD00392109 /* CLATracksViewController.m */; };
-		8404409718444DBB00392109 /* CLAServerAPISessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404409618444DBB00392109 /* CLAServerAPISessionManager.m */; };
+		8404409718444DBB00392109 /* CLAParseAPISession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404409618444DBB00392109 /* CLAParseAPISession.m */; };
 		84044099184450BA00392109 /* CLATrackListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84044098184450BA00392109 /* CLATrackListing.storyboard */; };
 		840885C4183F195D006626D1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840885BC183F195D006626D1 /* AudioToolbox.framework */; };
 		840885C5183F195D006626D1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840885BD183F195D006626D1 /* CFNetwork.framework */; };
@@ -34,12 +34,12 @@
 		8427CAE0183ACC4600FCA047 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8427CADE183ACC4600FCA047 /* InfoPlist.strings */; };
 		8427CAE2183ACC4600FCA047 /* Audio_GuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427CAE1183ACC4600FCA047 /* Audio_GuideTests.m */; };
 		84A6BFFC183EF832007B11B7 /* CLAApplicationKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6BFFB183EF832007B11B7 /* CLAApplicationKeys.m */; };
+		84CD0253184D7989002E281B /* CLASeverAPIURLs.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD0252184D7989002E281B /* CLASeverAPIURLs.m */; };
 		84F0A653183B052C00EF2CF9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F0A652183B052C00EF2CF9 /* MapKit.framework */; };
 		84F0A656183B05CE00EF2CF9 /* CLAMapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F0A654183B05CE00EF2CF9 /* CLAMapView.storyboard */; };
 		84F0A659183B066800EF2CF9 /* CLAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0A658183B066800EF2CF9 /* CLAMapViewController.m */; };
 		84F0A65E183B1B8B00EF2CF9 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F0A65C183B1B8B00EF2CF9 /* menu.png */; };
 		84F0A65F183B1B8B00EF2CF9 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F0A65D183B1B8B00EF2CF9 /* menu@2x.png */; };
-		84F319B3183C3DB10047567D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F319B2183C3DB10047567D /* Parse.framework */; };
 		84F87CF5183F018000E4BA58 /* CLALeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F87CF3183F018000E4BA58 /* CLALeftMenuViewController.m */; };
 		84F87CF6183F018000E4BA58 /* CLALeftMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F87CF4183F018000E4BA58 /* CLALeftMenuView.xib */; };
 		84F9AC8818466C5400B77F6F /* CLATrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F9AC8718466C5400B77F6F /* CLATrack.m */; };
@@ -61,8 +61,8 @@
 		84044090184445DD00392109 /* CLALeftMenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CLALeftMenu.plist; sourceTree = "<group>"; };
 		84044092184448AD00392109 /* CLATracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLATracksViewController.h; sourceTree = "<group>"; };
 		84044093184448AD00392109 /* CLATracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLATracksViewController.m; sourceTree = "<group>"; };
-		8404409518444DBB00392109 /* CLAServerAPISessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAServerAPISessionManager.h; sourceTree = "<group>"; };
-		8404409618444DBB00392109 /* CLAServerAPISessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAServerAPISessionManager.m; sourceTree = "<group>"; };
+		8404409518444DBB00392109 /* CLAParseAPISession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAParseAPISession.h; sourceTree = "<group>"; };
+		8404409618444DBB00392109 /* CLAParseAPISession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAParseAPISession.m; sourceTree = "<group>"; };
 		84044098184450BA00392109 /* CLATrackListing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CLATrackListing.storyboard; sourceTree = "<group>"; };
 		840885BC183F195D006626D1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		840885BD183F195D006626D1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -96,17 +96,17 @@
 		84A6BFFD183EFA86007B11B7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		84A6BFFF183EFAB8007B11B7 /* CLAPods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAPods.h; sourceTree = "<group>"; };
 		84A6C002183EFAE8007B11B7 /* CLACommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLACommon.h; sourceTree = "<group>"; };
+		84CD0251184D7989002E281B /* CLASeverAPIURLs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLASeverAPIURLs.h; sourceTree = "<group>"; };
+		84CD0252184D7989002E281B /* CLASeverAPIURLs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLASeverAPIURLs.m; sourceTree = "<group>"; };
 		84F0A652183B052C00EF2CF9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84F0A655183B05CE00EF2CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CLAMapView.storyboard; sourceTree = "<group>"; };
 		84F0A657183B066800EF2CF9 /* CLAMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAMapViewController.h; sourceTree = "<group>"; };
 		84F0A658183B066800EF2CF9 /* CLAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAMapViewController.m; sourceTree = "<group>"; };
 		84F0A65C183B1B8B00EF2CF9 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		84F0A65D183B1B8B00EF2CF9 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
-		84F319B2183C3DB10047567D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		84F87CF2183F018000E4BA58 /* CLALeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLALeftMenuViewController.h; sourceTree = "<group>"; };
 		84F87CF3183F018000E4BA58 /* CLALeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLALeftMenuViewController.m; sourceTree = "<group>"; };
 		84F87CF4183F018000E4BA58 /* CLALeftMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLALeftMenuView.xib; sourceTree = "<group>"; };
-		84F9AC8318466B3700B77F6F /* CLAServerAPIUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAServerAPIUrls.h; sourceTree = "<group>"; };
 		84F9AC8618466C5400B77F6F /* CLATrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLATrack.h; path = Model/CLATrack.h; sourceTree = "<group>"; };
 		84F9AC8718466C5400B77F6F /* CLATrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLATrack.m; path = Model/CLATrack.m; sourceTree = "<group>"; };
 		84F9AC8C18466EB300B77F6F /* CLATrack+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLATrack+Category.h"; path = "Model/CLATrack+Category.h"; sourceTree = "<group>"; };
@@ -132,7 +132,6 @@
 				8427CABB183ACC4600FCA047 /* UIKit.framework in Frameworks */,
 				84F0A653183B052C00EF2CF9 /* MapKit.framework in Frameworks */,
 				8427CAB7183ACC4600FCA047 /* Foundation.framework in Frameworks */,
-				84F319B3183C3DB10047567D /* Parse.framework in Frameworks */,
 				774085DAC346487BA0EEBA5C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,7 +182,6 @@
 				840885C1183F195D006626D1 /* QuartzCore.framework */,
 				840885C2183F195D006626D1 /* Security.framework */,
 				840885C3183F195D006626D1 /* SystemConfiguration.framework */,
-				84F319B2183C3DB10047567D /* Parse.framework */,
 				84F0A652183B052C00EF2CF9 /* MapKit.framework */,
 				8427CAB6183ACC4600FCA047 /* Foundation.framework */,
 				8427CAB8183ACC4600FCA047 /* CoreGraphics.framework */,
@@ -199,7 +197,6 @@
 			children = (
 				84A6BFFA183EF832007B11B7 /* CLAApplicationKeys.h */,
 				84A6BFFB183EF832007B11B7 /* CLAApplicationKeys.m */,
-				84F9AC8318466B3700B77F6F /* CLAServerAPIUrls.h */,
 				8427CAC5183ACC4600FCA047 /* CLAAppDelegate.h */,
 				8427CAC6183ACC4600FCA047 /* CLAAppDelegate.m */,
 				84F0A654183B05CE00EF2CF9 /* CLAMapView.storyboard */,
@@ -212,8 +209,10 @@
 				84044092184448AD00392109 /* CLATracksViewController.h */,
 				84044093184448AD00392109 /* CLATracksViewController.m */,
 				84044098184450BA00392109 /* CLATrackListing.storyboard */,
-				8404409518444DBB00392109 /* CLAServerAPISessionManager.h */,
-				8404409618444DBB00392109 /* CLAServerAPISessionManager.m */,
+				84CD0251184D7989002E281B /* CLASeverAPIURLs.h */,
+				84CD0252184D7989002E281B /* CLASeverAPIURLs.m */,
+				8404409518444DBB00392109 /* CLAParseAPISession.h */,
+				8404409618444DBB00392109 /* CLAParseAPISession.m */,
 				84F9AC8618466C5400B77F6F /* CLATrack.h */,
 				84F9AC8718466C5400B77F6F /* CLATrack.m */,
 				84F9AC8C18466EB300B77F6F /* CLATrack+Category.h */,
@@ -437,7 +436,8 @@
 				84F9AC8818466C5400B77F6F /* CLATrack.m in Sources */,
 				8427CAC3183ACC4600FCA047 /* main.m in Sources */,
 				84044094184448AD00392109 /* CLATracksViewController.m in Sources */,
-				8404409718444DBB00392109 /* CLAServerAPISessionManager.m in Sources */,
+				8404409718444DBB00392109 /* CLAParseAPISession.m in Sources */,
+				84CD0253184D7989002E281B /* CLASeverAPIURLs.m in Sources */,
 				84A6BFFC183EF832007B11B7 /* CLAApplicationKeys.m in Sources */,
 				84F87CF5183F018000E4BA58 /* CLALeftMenuViewController.m in Sources */,
 			);

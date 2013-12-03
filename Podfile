@@ -10,4 +10,5 @@ pod "Facebook-iOS-SDK", "~> 3.10"
 pod "PKRevealController", "~> 2.0.6"
 pod "FXKeychain", "~> 1.4"
 pod "SOCKit", "~> 1.0"
+pod "Parse-iOS-SDK", "~> 1.2.16"
 

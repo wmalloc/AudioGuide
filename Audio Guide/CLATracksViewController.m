@@ -22,10 +22,14 @@
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    CLAServerAPISessionManager *manager = [CLAServerAPISessionManager manager];
-    [manager GET:CLAServerAPIUrlsTrack parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        CRFLogInfo(CRFLogLevelEvent, @"%@", responseObject);
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    CLAParseAPISession *manager = [CLAParseAPISession manager];
+    [manager getTracks:^(NSURLSessionDataTask *task, NSDictionary *tracks) {
+        CRFLogInfo(CRFLogLevelEvent, @"%@", tracks);
+        self.tracks = tracks[@"results"];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         CRFLogError(CRFLogLevelEvent, @"%@", [error localizedDescription]);
     }];
@@ -42,26 +46,23 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return self.tracks.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CLATracksTableCell" forIndexPath:indexPath];
+    NSDictionary *item = self.tracks[indexPath.row];
+    cell.textLabel.text = item[@"title"];
+    cell.detailTextLabel.text = item[@"description"];
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
